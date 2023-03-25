@@ -32,7 +32,6 @@ header h5 {
     padding: 10px;
     margin: auto;
     margin-bottom: 20px;
-
 }
 
 /* NAVIGATION BAR */
@@ -41,7 +40,6 @@ nav {
     background-color: #eff0de;
     border-radius: 4px;
 }
-
 
 nav a {
     float: left;
