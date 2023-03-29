@@ -1,0 +1,147 @@
+* {
+    font-family: 'Golos Text', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #ffffff;
+}
+
+/* POP-UP FEATURE */
+#pop-up {
+    color: #ffffff;
+    height: 25px;
+    background-color: #7BA168;
+}
+
+#pop-up p {
+    text-align: center;
+    font-size: 14px;
+    padding: 3px;
+}
+
+/* LOGO HEADER */
+#cover img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* RECIPE HEADER - name & description */
+header {
+    height: 100%;
+    color: #525d4d;
+    background-color: #f4f4f4;
+    clear: both;
+}
+
+header h1 {
+    font-size: 2em;
+    padding-top: 30px;
+    line-height: 2.5em;
+    float: left;
+    margin-left: 170px;
+}
+
+.calories {
+    float: left;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 170px;
+    color: #828080;
+}
+
+.allergens {
+    float: left;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 170px;
+    color: #828080;
+}
+
+#description {
+    float: left;
+    line-height: 1.5;
+    margin-left: 170px;
+    display: block;
+}
+
+#pasta {
+    float: right;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+
+.clr {
+    clear: both;
+}
+
+/* INGREDIENTS */
+.ingredients {
+    background-color: #A0BF6B;
+    float: left;
+    width: 300px;
+    padding: 10px;
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+.ingredients h2,
+ul {
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.ingredients li {
+    margin-top: 2px;
+    line-height: 1.6;
+}
+
+/* extra information */
+.extra {
+    margin-left: 15px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.extra b {
+    color: #f0f1f1;
+}
+
+/* RECIPE METHOD */
+main {
+    color: #525d4d;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 390px;
+    margin-right: 20px;
+}
+
+main li {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* FOOTER */
+footer a {
+    font-size: 14px;
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #A0BF6B;
+}
