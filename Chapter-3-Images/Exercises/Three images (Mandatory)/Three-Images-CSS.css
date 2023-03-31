@@ -1,0 +1,85 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 10px;
+    color: white;
+    background-color: #cabed3;
+    border-radius: 20px;
+}
+
+/* Displaying Original Images */
+.original-img {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+.original::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr.div-two {
+    border: 2px dashed #c3c6d5;
+    border-radius: 5px;
+    width: 82%;
+}
+
+/* Title Attribute for Images */
+.filtered h2 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #e3aebe;
+}
+
+.filtered h4 {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #a69991;
+    background-color: #fefaef;
+    padding: 5px;
+}
+
+.filtered img {
+    height: 100%;
+    width: 100%;
+}
+
+/* FIRST IMAGE: Grayscale */
+.image-one img {
+    filter: grayscale(80%);
+}
+
+/* SECOND IMAGE: Drop-Shadow & Invert */
+.image-two img {
+    filter: sepia(100%);
+}
+
+/* THIRD IMAGE: Blurred */
+.image-three img {
+    filter: blur(3px);
+}
+
+/* Copyright Link */
+.filtered a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #c1c5d1;
+    text-decoration: none;
+}
+
+.filtered a:hover {
+    color: #e7a9bc;
+}
+
+.date {
+    color: #e0b8b8;
+}
