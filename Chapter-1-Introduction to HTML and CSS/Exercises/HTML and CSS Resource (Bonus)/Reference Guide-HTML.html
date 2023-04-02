@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="Reference-Guide-CSS.css">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <!-- CHAPTER #1: Bonus Exercise | HTML and CSS Resource -->
+    <title>HTML and CSS Resource</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="title">
+                <h1>HTML &amp; CSS Quick-Reference Guide</h1> <!--website header-->
+            </div>
+        </header>
+
+        <main>
+            <div class="lesson-header">
+                <h2>HTML: HyperText Markup Language</h2>
+            </div>
+
+            <!--HTML GUIDE-->
+            <div id="html">
+                <img src="https://www.dropbox.com/s/mrpmczjhafhh2vc/html-gif.gif?dl=1" alt="" width="120">
+                <!--HTML Description-->
+                <p><mark>HTML (HyperText Markup Language)</mark> is the most basic building block of the Web. It defines
+                    the meaning
+                    and structure of web content.</p>
+                <ul>
+                    <li>Many HTML elements require both opening and closing tags, also called <b>container tags</b>.
+                    </li>
+                    <li>Tags that do not contain closing tags are called <b>empty tags</b>.</li>
+                </ul>
+                <br>
+                <hr>
+
+                <div class="html-structure">
+                    <h2>HTML PAGE STRUCTURE <i>(syntax)</i></h2>
+                </div>
+
+                <!--HTML Syntax Example-->
+                <div class="structure-code">
+                    <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en"&gt;<br>&lt;head&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Document Title&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&emsp;&emsp;&emsp;&emsp;Text Here<br>&lt;/body&gt;<br>&lt;/html&gt;</code></pre>
+                </div>
+
+                <!--HTML TAGS-->
+                <div class="tags">
+                    <h2>BASIC HTML TAGS</h2>
+
+                    <!--HTML Headings (h1-h6)-->
+                    <h3><span style="color: #cdcdcb">01 |</span> HTML Headings</h3>
+                    <p>Headings allow you to divide the content of your page into sections. The HTML Header Elements
+                        represent six levels of
+                        section headings. <code class="code">&lt;h1&gt;</code>
+                        defines the most important heading. <code class="code">&lt;h6&gt;</code> defines the least
+                        important heading.
+                    </p>
+                    <div class="header-example">
+                        <pre><code>&lt;h1&gt;Heading level 1&lt;/h1&gt;<br>&lt;h2&gt;Heading level 2&lt;/h2&gt;<br>&lt;h3&gt;Heading level 3&lt;/h3&gt;<br>&lt;h4&gt;Heading level 4&lt;/h4&gt;<br>&lt;h5&gt;Heading level 5&lt;/h5&gt;<br>&lt;h6&gt;Heading level 6&lt;/h6&gt;</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Paragraph Element <p>-->
+                    <h3><span style="color: #cdcdcb">02 |</span> Paragraph Element</h3>
+                    <p>The <code class="code">&lt;p&gt;</code> element allows you to create text paragraphs in your
+                        website.</p>
+                    <div class="header-example">
+                        <pre><code>&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Line Break Element <br>-->
+                    <h3><span style="color: #cdcdcb">03 |</span> Line Break Element</h3>
+                    <p>The <code class="code">&lt;br&gt;</code> is a stand alone or void tag. It causes the next element
+                        or text to display on a new line.</p>
+                    <div class="header-example">
+                        <pre><code>...text goes here &lt;br&gt;<br>This starts on a new line</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Anchor Element (a href)-->
+                    <h3><span style="color: #cdcdcb">04 |</span> Anchor Element - Adding Links</h3>
+                    <p><code class="code">&lt;a&gt;</code> specifies a hyperlink reference <i><code
+                                class="code">href</code></i> to a piece of content on your own or another website.</p>
+                    <div class="header-example">
+                        <pre><code>&lt;a href="http://www.contact.com/"&gt;Contact us here!&lt;/a&gt;</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Image Element (img src)-->
+                    <h3><span style="color: #cdcdcb">05 |</span> Image Element - Adding/Linking Images</h3>
+                    <p>The <code class="code">&lt;img&gt;</code> allows you to insert images into your web pages. The
+                        <code class="code">&lt;alt&gt;</code> attribute specifies an alternate text for an image.
+                    </p>
+                    <div class="header-example">
+                        <pre><code>&lt;img src="photo.png" alt="Example Photo"&gt;</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Div Element <div>-->
+                    <h3><span style="color: #cdcdcb">06 |</span> Div Element</h3>
+                    <p>The <code class="code">&lt;div&gt;</code> element configures a structural block area or
+                        “division” on a web page with empty space above and below. You can use CSS to style and position
+                        the divs by adding <i><mark>class and/or id attributes</mark></i> to
+                        your div elements. This is the foundation for CSS-based page layouts.</p>
+                    <div class="header-example">
+                        <pre><code>&lt;div class="description"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;h1&gt;This is the first heading&lt;/h1&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Description Here&lt;/p&gt;<br>&lt;/div&gt;</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Span Element <span>-->
+                    <h3><span style="color: #cdcdcb">07 |</span> Span Element</h3>
+                    <p><code class="code">&lt;span&gt;</code> is an inline element that is often used as a container for
+                        some text. It is used to style parts of the text.</p>
+                    <p><mark>The span element is similar to div; the difference is that div is a block-level
+                            element, whereas span is an inline element.</mark></p>
+                    <ul>
+                        <li><b>Block-level Elements: </b>Always starts on a new line. Intended for holding stand-alone
+                            blocks of content, such as paragraphs of text.</li>
+                        <li><b>Inline Elements: </b>intended to hold smaller pieces of content within a larger block of
+                            content, such as a few words or a sentence. </li>
+                    </ul>
+
+                    <div class="header-example">
+                        <pre><code>&lt;h2&gt;Some<br>&emsp;&emsp;&emsp;&emsp;&lt;span style="color:red"&gt;Important&lt;/span&gt;<br>Message&lt;/h2&gt;</code></pre>
+                    </div>
+                    <br>
+
+                    <!--HTML Lists (unordered & ordered)-->
+                    <h3><span style="color: #cdcdcb">★ |</span> HTML LISTS</h3>
+                    <ul>
+                        <li><b>Unordered Lists</b> <code class="code">&lt;ul&gt;</code> — Displays a bullet, or list
+                            marker, before each entry in the list. Each list item starts with the <code
+                                class="code">&lt;li&gt;</code> tag.</li>
+                    </ul>
+                    <br>
+                    <div class="header-example">
+                        <pre><code>&lt;ul&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;li&gt;apple&lt;/li&gt; <span style="color: green">&lt;!-- li: list item --&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&lt;li&gt;banana&lt;/li&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;li&gt;orange&lt;/li&gt;<br>&lt;/ul&gt;</code></pre>
+                    </div>
+                    <br>
+                    <ul>
+                        <li><b>Ordered Lists</b> <code class="code">&lt;ol&gt;</code> — Displays a numbering or
+                            lettering system to itemize the information contained in the list. Each list item starts
+                            with the <code class="code">&lt;li&gt;</code> tag.</li>
+                    </ul>
+                    <br>
+                    <div class="header-example">
+                        <pre><code>&lt;ol&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;li&gt;first item&lt;/li&gt; <span style="color: green">&lt;!-- li: list item --&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&lt;li&gt;second item&lt;/li&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;li&gt;third item&lt;/li&gt;<br>&lt;/ol&gt;</code></pre>
+                    </div>
+
+                    <h2>FORMATTING TAGS AND SPECIAL CHARACTERS</h2>
+
+                    <!--Table for the different formatting tags in HTML-->
+                    <h3><span style="color: #cdcdcb">★ |</span> HTML Basic Formatting Tags</h3>
+                    <table>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;i&gt;</code></td>
+                            <td>Formats any text as italic</td>
+                            <td><i>This is an italic text</i></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;u&gt;</code></td>
+                            <td>Formats any text as underlined</td>
+                            <td><u>This is an underlined text</u></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;b&gt;</code></td>
+                            <td>Formats any text as bold</td>
+                            <td><b>This is a bold text</b></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;mark&gt;</code></td>
+                            <td>Defines text that should be marked or highlighted</td>
+                            <td><mark>This is a marked text</mark></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;small&gt;</code></td>
+                            <td>Used to make text one size smaller</td>
+                            <td><small>This is a text in small print</small></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;sub&gt;</code></td>
+                            <td>Specifies inline text to be displayed as subscript</td>
+                            <td>Example of a text in <sub>subscript</sub></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;sup&gt;</code></td>
+                            <td>Specifies inline text to be displayed as superscript</td>
+                            <td>Example of a text in <sup>superscript</sup></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code">&lt;del&gt;</code></td>
+                            <td>Defines deleted text. Displayed in strikethrough</td>
+                            <td><del>This is a deleted text</del></td>
+                        </tr>
+                    </table>
+
+                    <!--Table for the different special characters in HTML-->
+                    <h3><span style="color: #cdcdcb">★ |</span> HTML Special Characters</h3>
+                    <table>
+                        <tr>
+                            <th>Character</th>
+                            <th>Code</th>
+                        </tr>
+                        <tr>
+                            <td>&copy;</td>
+                            <td><code class="code">&amp;copy;</code></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;</td>
+                            <td><code class="code">&amp;lt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>&gt;</td>
+                            <td><code class="code">&amp;gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>&amp; (ampersand)</td>
+                            <td><code class="code">&amp;amp;</code></td>
+                        </tr>
+                        <tr>
+                            <td>inserts empty space</td>
+                            <td><code class="code">&amp;&amp;nbsp;</code></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!--CSS GUIDE-->
+            <div class="lesson-header">
+                <h2>CSS: Cascading Style Sheets</h2>
+            </div>
+
+            <div id="css">
+                <img src="https://www.dropbox.com/s/q73ux6i0if7htww/css-gif.gif?dl=1" alt="" width="130">
+                <!--CSS Description-->
+                <p><mark>CSS (Cascading Style Sheets)</mark> allows you to define styles for web pages. It targets
+                    elements using selectors, which allows you to target specific elements and apply the same style to
+                    them.</p>
+                <ul>
+                    <li>There are three ways you can use to implement CSS into your HTML: <b>internal, external,</b> and
+                        <b>inline styles</b>.
+                    </li>
+                </ul>
+                <br>
+                <hr>
+                <div class="css-structure">
+                    <h2>CSS STRUCTURE <i>(syntax)</i></h2>
+                </div>
+
+                <!--CSS Structure/Syntax Example-->
+                <div class="structure-code">
+                    <pre><code>Selector {<br>&emsp;&emsp;&emsp;&emsp;Property 1 : value;<br>&emsp;&emsp;&emsp;&emsp;Property 2 : value;<br>&emsp;&emsp;&emsp;&emsp;Property 3 : value;<br>}</code></pre>
+                </div>
+
+                <!--CSS TAGS-->
+                <div class="tags">
+                    <h2>Applying CSS into HTML</h2>
+
+                    <!--Inline CSS-->
+                    <h3><span style="color: #cdcdcb">01 |</span> Inline CSS</h3>
+                    <p>To apply a distinct style to a single HTML element. Inline CSS makes use of an HTML element's
+                        <code class="code">&lt;style&gt;</code> attribute.
+                    </p>
+                    <div class="header-example">
+                        <pre><code>&lt;h1 style="color:blue;"&gt;Hello World!&lt;/h1&gt;</code></pre>
+                    </div>
+
+                    <!--Internal CSS-->
+                    <h3><span style="color: #cdcdcb">02 |</span> Internal CSS</h3>
+                    <p>To define a distinct style to a single HTML page. Internal CSS is defined in the <code
+                            class="code">&lt;head&gt;</code> section of an HTML page, within a <code
+                            class="code">&lt;style&gt;</code> element.
+                    </p>
+                    <div class="header-example">
+                        <pre><code>&lt;style&gt;<br>body { <br>&emsp;&emsp;&emsp;&emsp;background-color: powderblue;<br>}<br>&lt;/style&gt;</code></pre>
+                    </div>
+
+                    <!--External CSS-->
+                    <h3><span style="color: #cdcdcb">03 |</span> External CSS</h3>
+                    <p>Many HTML pages use an external style sheet to customize their website. To use an external style
+                        sheet, include a link to it in the <code class="code">&lt;head&gt;</code> section of each HTML
+                        page.
+                    </p>
+                    <div class="header-example">
+                        <pre><code>&lt;head&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;link rel="stylesheet" href="name of the css file.css"&gt;<br>&lt;/head&gt;</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Types of CSS Selectors (Element, ID, Class)-->
+                    <h2>CSS Selectors</h2>
+                    <p>CSS selectors are used to specify/target the HTML elements to be styled. The three simple types
+                        of CSS Selectors are <b>element</b>, <b>class</b>, and <b>id selector</b>.</p>
+
+                    <h3><span style="color: #cdcdcb">★ |</span> Element Selector</h3>
+                    <p>Used to select HTML elements based on their names. (Example: h1, p, a)</p>
+                    <div class="header-example">
+                        <pre><code>h1 {<br>&emsp;&emsp;&emsp;&emsp;color: blue;<br>}</code></pre>
+                    </div>
+
+                    <h3><span style="color: #cdcdcb">★ |</span> ID Selector</h3>
+                    <p>The id selector uses an HTML element's id attribute to select a specific element. There can only
+                        be one element with the same id. <br><br>
+                        <b>Syntax:</b> <code class="code">&lt;p id="heading"&gt; Hello World! &lt;/p&gt;</code>
+                    </p>
+                    <div class="header-example">
+                        <pre><code>#heading {<br>&emsp;&emsp;&emsp;&emsp;text-align: center;<br>}</code></pre>
+                    </div>
+
+                    <h3><span style="color: #cdcdcb">★ |</span> Class Selector</h3>
+                    <p>To target only a subset of elements, without changing the other. Can be used multiple times
+                        within the page. <br><br>
+                        <b>Syntax:</b> <code class="code">&lt;h1 class="pop-up"&gt; This is a text &lt;/h1&gt;</code>
+                    </p>
+                    <div class="header-example">
+                        <pre><code>.pop-up {<br>&emsp;&emsp;&emsp;&emsp;text-align: center;<br>}</code></pre>
+                    </div>
+                    <br>
+
+                    <!--Different Ways to Style Text in CSS (Properties & Attributes)-->
+                    <h2>Styling Text with CSS</h2>
+                    <table>
+                        <tr>
+                            <th>Property</th>
+                            <th>Uses/Examples</th>
+                        </tr>
+                        <tr>
+                            <td>font-family</td>
+                            <td><code class="code">font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>font-style</td>
+                            <td><code class="code">font-style: italic;</code></td>
+                        </tr>
+                        <tr>
+                            <td>font-weight</td>
+                            <td><code class="code">font-weight: bold;</code></td>
+                        </tr>
+                        <tr>
+                            <td>text-align</td>
+                            <td><code class="code">text-align: justify;</code></td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <li><b>Text-Transform property</b>- allows you to transform text with the following values:
+                            <i>uppercase, lowercase, capitalize</i>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><b>Text-Decoration property</b>- specifies the decoration added to text and contains the
+                            following properties:
+                            <i>none, underline, overline, line-through</i>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><b>Text-Shadow property</b>- allows you to set a shadow for the text.<br><br>
+                            Example: <code class="code">h1 { text-shadow: 3px 2px 3px red; }</code><br>
+                            <ul>
+                                <li>First value- horizontal offset of the shadow.</li>
+                                <li>Second value- the vertical offset.</li>
+                                <li>Third value- blur radius: a higher value means the shadow is dispersed more widely.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Made By: Princess Jasmin S. Panilagao
+        </footer>
+    </div>
+</body>
+</html>
