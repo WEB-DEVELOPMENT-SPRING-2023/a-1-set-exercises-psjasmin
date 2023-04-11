@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Study-Planner-CSS.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!--ICON LIBRARY-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CHAPTER #4: Bonus Exercise | Study Planner -->
+    <title>Study Planner</title>
+</head>
+<body>
+    <header> <!--HEADER-->
+        <div id="top">
+            <h1>Study Planner</h1> <!--header logo-->
+            <nav> <!--NAVIGATON MENU-->
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#" class="what">What's On</a>
+                <a href="#">Courses</a>
+                <a href="#">Tasks</a>
+            </nav>
+            <div class="search">Search Courses... <!--search bar-->
+                <a href="#"><i class="fa fa-search"></i></a> <!--search icon-->
+            </div>
+        </div>
+        <img src="https://www.dropbox.com/s/7g9xbaf7quc2xl7/header-img.png?dl=1" alt="Learning Takes Consistency">
+    </header>
+
+    <div id="course"> <!--course title-->
+        <h1>Web Development Level 4</h1>
+        <p><b class="title">Creative Computing Course</b> <br> <b><i>(2022-2023 | Semester 2)</i></b> </p>
+    </div>
+
+    <h2>Teaching Materials</h2>
+    <main> <!--MAIN CONTENT-->
+        <section> <!--COLUMN 1: SECTION-->
+            <div class="TM"> <!--Item 1: Teaching Material Sample #1-->
+                <img src="https://www.dropbox.com/s/5d3dbezdbt93rf1/icon-1-nb.png?dl=1" alt="Introduction to HTML"> <!--Logo-->
+                <div class="teach-1">
+                    <h4>Beginner Level</h4>
+                    <h3>Introduction to HTML</h3> <!--Description-->
+                    <p>HTML stands for HyperText Markup Language. It is the most basic building block of the Web. It
+                        defines the
+                        meaning and structure of web content. HTML consists of a series of elements that tells the
+                        browser what and how to display.</p>
+                </div>
+            </div>
+
+            <div class="TM"> <!--Item 2: Teaching Material Sample #2-->
+                <img src="https://www.dropbox.com/s/2bgl1cs9vex1cud/icon-2-nb.png?dl=1" alt="Introduction to CSS"> <!--Logo-->
+                <div class="teach-1">
+                    <h4>Beginner Level</h4>
+                    <h3>Introduction to CSS</h3> <!--Description-->
+                    <p>CSS stands for Cascading Style Sheets. It allows you to define styles for web pages. CSS uses
+                        selectors to target specific elements and apply the same style to
+                        them. Additionally, it uses rules to style elements.</p>
+                </div>
+            </div>
+
+            <div class="TM"> <!--Item 3: Teaching Material Sample #3-->
+                <img src="https://www.dropbox.com/s/94gki8ylkwwif99/icon-3-nb.png?dl=1" alt="Introduction to JavaScript"> <!--Logo-->
+                <div class="teach-1">
+                    <h4>Beginner Level</h4>
+                    <h3>Introduction to JavaScript</h3> <!--Description-->
+                    <p>JavaScript is used to add functions to a website. You can add JavaScript code in an HTML document
+                        using the &lt;script&gt; tag. The console is part of the web browser and allows you to log
+                        messages, run JavaScript code, and see errors and warnings.</p>
+                </div>
+            </div>
+        </section>
+
+        <aside> <!--COLUMN 2: ASIDE-->
+            <div id="calendar"> <!--CALENDAR-->
+                <div class="month">      
+                    <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li>
+                        April<br> <!--month-->
+                        <span style="font-size:18px">2023</span> <!--year-->
+                    </li>
+                    </ul>
+                </div>
+                
+                <ul class="weekdays"> <!--days of the week-->
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                    <li>Sun</li>
+                </ul>
+                
+                <ul class="days"> <!--date-->
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li><span class="active">25</span></li> <!--highlighted date-->
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+            <br>
+            <hr>
+
+            <h2 class="ut">Upcoming Tasks</h2> <!--UPCOMING TASKS-->
+
+            <table class="a-one"> <!--Item 4: Assessment Sample #1-->
+                <tr>
+                    <th>Assessment 1: GitHub Set Exercises<br><span class="date">April 25, 2023</span></th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Click the link below to view the Assessment Brief:</p>
+                            <div class="ab"> <!--button #1-->
+                                <a href="https://portal.ftcglobal.ae/mod/resource/view.php?id=21551" target="_blank">Set Exercises - Assessment Brief.docx</a>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="a-two"> <!--Item 5: Assessment Sample #2-->
+                <tr>
+                    <th>Assessment 2: Web Development Project<br><span class="date">May 20, 2023</span></th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Click the link below to view the Assessment Brief:</p>
+                            <div class="ab"> <!--button #2-->
+                                <a href="https://classroom.github.com/assignment-invitations/8818532784798a8c92ef6b1d390a607f/status" target="_blank">Set Exercises - Assessment Brief.docx</a>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </aside>
+    </main>
+    <footer> <!--FOOTER-->
+        Copyright &copy; 2023 Study Planner &nbsp;|&nbsp; Made by: Princess Jasmin S. Panilagao
+    </footer>
+</body>
+</html>
