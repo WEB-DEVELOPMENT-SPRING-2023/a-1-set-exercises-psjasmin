@@ -1,0 +1,313 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#top h1 {
+  color: #F47F34;
+}
+
+#top {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+/* SEARCH BUTTON */
+.search {
+  font-size: 14px;
+  color: #a4a5a0;
+  background-color: #f1f1f1;
+  padding: 5px;
+  border-radius: 5px;
+  width: 80%;
+  padding-left: 10px;
+  display: inline-block;
+  height: max-content;
+  margin-top: 35px;
+}
+
+.search a {
+  color: #a4a5a0;
+  float: right;
+  padding-right: 10px;
+}
+
+header img {
+  height: 100%;
+  width: 100%;
+}
+
+/* NAVIGATION MENU */
+nav {
+  font-size: 18px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  word-spacing: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #6dc55e;
+}
+
+.what {
+  word-spacing: 0px;
+}
+
+#course h1 {
+  text-align: center;
+  color: #f48135;
+  margin-bottom: 0px;
+}
+
+#course p {
+  margin-top: 5px;
+  color: #b5b4b0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.title {
+  color: #f2ca38;
+}
+
+#course i {
+  font-size: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+}
+
+section {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.TM {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.TM img {
+  width: 90%;
+}
+
+.teach-1 h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #3b5552;
+}
+
+.teach-1 h4 {
+  color: #6dc55e;
+}
+
+.teach-1 p {
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+/* ASIDE INFORMATION: UPCOMING TASKS */
+.ut {
+  margin-bottom: 25px;
+}
+
+aside table {
+  border-collapse: collapse;
+}
+
+aside th {
+  background-color: #f48135;
+  border-radius: 5px;
+  color: white;
+  line-height: 18px;
+}
+
+aside th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px 8px 8px 10px;
+}
+
+aside td {
+  background-color: #ffffff;
+}
+
+.date {
+  font-size: 13px;
+  color: #f0f2eb;
+  font-weight: normal;
+}
+
+/* BUTTONS - ASSESSMENT BRIEF */
+.ab {
+  width: max-content;
+  background-color: #f2ca38;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+  margin: auto auto 10px auto;
+}
+
+.ab a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
+
+.ab:hover {
+  background-color: #e5c896;
+}
+
+.a-one {
+  margin-bottom: 30px;
+}
+
+.a-two th {
+  background-color: #8d65fa;
+}
+
+/* STYLING CALENDAR */
+aside {
+  background-color: #f1f1f1;
+  margin-left: 40px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+aside h2 {
+  margin-top: 20px;
+}
+
+#calendar {
+  font-family: Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.month {
+  padding: 50px 50px;
+  background: #6dc55e;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 30px;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 30px;
+  background: #ffffff;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Active Date */
+.days li .active {
+  padding: 5px;
+  background: #6dc55e;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .weekdays li,
+  .days li {
+    width: 12%;
+  }
+
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  font-size: 14.5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #b6cac9;
+  color: #000000;
+  text-align: center;
+}
