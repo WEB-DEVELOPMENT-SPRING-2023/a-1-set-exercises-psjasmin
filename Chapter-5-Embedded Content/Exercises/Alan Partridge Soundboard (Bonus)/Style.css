@@ -1,0 +1,54 @@
+body {
+    background-image: url('https://www.dropbox.com/s/p9mtz6hcxm5bt7r/background-image.png?dl=1');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 50px 50px 50px 50px;
+}
+
+header {
+    font-family: 'Aboreto', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 20px #b88fdb;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    margin-bottom: 30px;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: #decbec;
+    border-radius: 7px;
+    border: none;
+    line-height: 2rem;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+    background-color: #e9d3a0;
+}
+
+.number {
+    font-size: 16px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.duration {
+    font-size: 14px;
+}
