@@ -22,13 +22,13 @@ function booo(){
   snd.play()
 }
 
-//Jurassic Park
+//Email of the Evening
 function jurassic(){
   var snd = new Audio('https://www.dropbox.com/s/drutwih3vjpyh15/emailoftheevening.mp3?dl=1')
   snd.play()
 }
 
-//Smell My Cheese
+//I Ate a Scotch Egg
 function smc(){
   var snd = new Audio('https://www.dropbox.com/s/gyhtodtxlf23czc/iateascotchegg.mp3?dl=1')
   snd.play()
@@ -40,7 +40,7 @@ function goal(){
   snd.play()
 }
 
-//Kiss My Face
+//I'm Confused
 function kiss(){
   var snd = new Audio('https://www.dropbox.com/s/0xb9kwytzla9e97/imconfused.mp3?dl=1')
   snd.play()
