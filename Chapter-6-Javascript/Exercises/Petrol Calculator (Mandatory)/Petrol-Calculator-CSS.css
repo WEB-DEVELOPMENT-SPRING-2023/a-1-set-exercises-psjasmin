@@ -1,0 +1,112 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 48%;
+    background-color: #ddcdac;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: #fefaf0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px #ada288;
+}
+
+.calculator {
+    text-align: left;
+    margin: 10px 50px 30px 90px;
+}
+
+.calculator h1 {
+    color: #4c4741;
+    margin-bottom: 15px;
+}
+
+/* TITLE */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.header img {
+    width: 130%;
+    margin-left: 20px;
+}
+
+.description {
+    color: #686561;
+    line-height: 1rem;
+}
+
+form {
+    color: #4c4741;
+    font-size: 15px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.info h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* INPUT TEXT FIELD */
+input[type=text] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+    background-color: #efe9dd;
+    margin-bottom: 15px;
+}
+
+/* TOTAL COST BUTTON */
+input[type=button] {
+    border-radius: 20px;
+    border: none;
+    padding: 15px 25px;
+    background-color: #e43434;
+    color: #faf9f0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    margin: 0px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* button hover effect */
+input[type=button]:hover {
+    background-color: #ac2727;
+    transform: scale(1.1);
+}
+
+p {
+    color: #474747;
+}
+
+.total {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #ddcdac;
+    padding: 1px;
+    border-radius: 7px;
+}
+
+footer {
+    margin-top: 15px;
+    color: #afa08b;
+    font-size: 12px;
+    text-align: center;
+}
