@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="Petrol-Calculator-CSS.css">
+    <script src="Petrol-Calculator-JS.js"></script>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- CHAPTER #6: Mandatory Exercise | Petrol Calculator -->
+    <title>Petrol Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.dropbox.com/s/wcd39srlox1n11w/fuell.png?dl=1" alt="Petrol">
+            <div class="calculator">
+                <h1>Petrol Calculator</h1> <!--title-->
+                <div class="description">
+                    <b>Note:</b> <small> To find the total of petrol, enter the cost of petrol per liter and the number of liters purchased.</small>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div class="info">
+                <div class="petrol-liter"> <!--field to enter the cost of petrol per liter-->
+                <h4>Cost of Petrol per Liter:</h4> <input type="text" id="ppl" value="1.72"><br> <!--default value of 1.72-->
+                </div>
+                <div class="purchase"> <!--field to enter the number of liters purchased-->
+                <h4>Number of Liters Purchased:</h4> <input type="text" id="liters" value="0"><br> <!--default value of 0-->
+                </div>
+            </div>
+            <input type="button" onClick="multiplyBy()" Value="CALCULATE TOTAL COST"> <!--button to calculate the total cost-->
+        </form>
+        <div class="total">
+        <p><b>Total cost of the Petrol purchased:</b> <span id = "result"></span></p> <!--p tag to display the total cost-->
+        </div>
+    </div>
+    <footer>
+        Made by: Princess Jasmin S. Panilagao
+    </footer>
+</body>
+</html>
