@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="Style_Advanced.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="Index_Advanced.js"></script>
+
+    <!-- CHAPTER #5: Bonus Exercise | Alan Partridge Soundboard -->
+    <!-- Further Extension Problems -->
+    <title>Alan Partridge Soundboard</title>
+</head>
+<body>
+    <header>
+        <h1>˗ˏˋ AUDIO SAMPLER ´ˎ˗</h1>
+    </header>
+
+    <div class="advanced">
+        <div class="textarea">
+            <div class="title-1"> <!--Text to Speech Feature-->
+                <h3>Text To Speech Feature</h3>
+            </div>
+
+            <div> <!--text area element-->
+                <input type="text" id="text-to-speech" placeholder="Enter text to speak">
+            </div>
+
+            <div>
+                <small><b>NOTE:</b> Enter text and click on 'Say It' button.</small>
+            </div>
+
+            <div>
+                <button class="say-it" type="button" onclick="TextToAudio()">Say It</button>
+            </div>
+        </div>
+
+        <div class="slider-container"> <!--AUDIO SAMPLES-->
+            <div class="slider">
+                <div class="slides">
+
+                    <div id="soundboard__1" class="slide"> <!-- SAMPLE BANK #1-->
+                        <div class="soundboard">
+                            <div class="title-2">
+                                <h3>Sample Bank #1</h3>
+                            </div>
+                            <div class="grid-container">
+                                <button onclick="aha()">
+                                    <span class="number">1.</span> <br>
+                                    <span class="label">Ah-Ha</span> <br>
+                                    <span class="duration">1.4</span>
+                                </button>
+                                <button onclick="dan()">
+                                    <span class="number">2.</span> <br>
+                                    <span class="label">Dan</span> <br>
+                                    <span class="duration">0.5</span>
+                                </button>
+                                <button onclick="botn()">
+                                    <span class="number">3.</span> <br>
+                                    <span class="label">Back of the net</span> <br>
+                                    <span class="duration">1.02</span>
+                                </button>
+                            </div>
+
+                            <div class="grid-container">
+                                <button onclick="booo()">
+                                    <span class="number">4.</span> <br>
+                                    <span class="label">Bang out of order</span> <br>
+                                    <span class="duration">1.38</span>
+                                </button>
+                                <button onclick="jurassic()">
+                                    <span class="number">5.</span> <br>
+                                    <span class="label">Email of the Evening</span> <br>
+                                    <span class="duration">1.49</span>
+                                </button>
+                                <button onclick="smc()">
+                                    <span class="number">6.</span> <br>
+                                    <span class="label">I Ate a Scotch Egg</span> <br>
+                                    <span class="duration">1.91</span>
+                                </button>
+                            </div>
+
+                            <div class="grid-container">
+                                <button onclick="goal()">
+                                    <span class="number">7.</span> <br>
+                                    <span class="label">Goal</span> <br>
+                                    <span class="duration">1.49</span>
+                                </button>
+                                <button onclick="kiss()">
+                                    <span class="number">8.</span> <br>
+                                    <span class="label">I'm Confused</span> <br>
+                                    <span class="duration">1.07</span>
+                                </button>
+                                <button onclick="hp()">
+                                    <span class="number">9.</span> <br>
+                                    <span class="label">Hello Partridge</span> <br>
+                                    <span class="duration">2.25</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--RIGHT (NEXT) ARROW-->
+                        <div class="slider__nav">
+                            <a class="slide__next" href="#soundboard__2" title="Next">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <div id="soundboard__2" class="slide"> <!-- SAMPLE BANK #2-->
+                        <div class="soundboard">
+                            <div class="title-2">
+                                <h3>Sample Bank #2</h3>
+                            </div>
+                            <div class="grid-container">
+                                <button onclick="CR()">
+                                    <span class="number">10.</span> <br>
+                                    <span class="label">Cash Register</span> <br>
+                                    <span class="duration">2.0</span> <!--length of the sample in seconds-->
+                                </button>
+                                <button onclick="ding()">
+                                    <span class="number">11.</span> <br>
+                                    <span class="label">Ding</span> <br>
+                                    <span class="duration">2.0</span>
+                                </button>
+                                <button onclick="fail()">
+                                    <span class="number">12.</span> <br>
+                                    <span class="label">Fail</span> <br>
+                                    <span class="duration">4.0</span>
+                                </button>
+                            </div>
+
+                            <div class="grid-container">
+                                <button onclick="GA()">
+                                    <span class="number">13.</span> <br>
+                                    <span class="label">Game Achievement</span> <br>
+                                    <span class="duration">3.0</span>
+                                </button>
+                                <button onclick="HB()">
+                                    <span class="number">14.</span> <br>
+                                    <span class="label">Heart Beat</span> <br>
+                                    <span class="duration">16.0</span>
+                                </button>
+                                <button onclick="owl()">
+                                    <span class="number">15.</span> <br>
+                                    <span class="label">Owl</span> <br>
+                                    <span class="duration">3.0</span>
+                                </button>
+                            </div>
+
+                            <div class="grid-container">
+                                <button onclick="punch()">
+                                    <span class="number">16.</span> <br>
+                                    <span class="label">Punch</span> <br>
+                                    <span class="duration">1.0</span>
+                                </button>
+                                <button onclick="sparkles()">
+                                    <span class="number">17.</span> <br>
+                                    <span class="label">Sparkles</span> <br>
+                                    <span class="duration">2.0</span>
+                                </button>
+                                <button onclick="suspense()">
+                                    <span class="number">18.</span> <br>
+                                    <span class="label">Suspense</span> <br>
+                                    <span class="duration">7.0</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--LEFT (PREVIOUS) ARROW-->
+                        <div class="slider__nav">
+                            <a class="slide__prev" href="#soundboard__1" title="Prev">&#10094;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
