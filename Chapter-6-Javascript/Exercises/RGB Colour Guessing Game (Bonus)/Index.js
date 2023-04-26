@@ -40,14 +40,14 @@ document.querySelectorAll('.box').forEach((el, index) => {
       document.querySelector('.correct').classList.add('show'); // CORRECT ANSWER SCREEN
     } else {
       document.querySelector('.wrong').classList.add('show'); // WRONG ANSWER SCREEN
-      document.querySelector('.modal-score').textContent = 'SCORE: ' + stage;
+      document.querySelector('.transition-score').textContent = 'SCORE: ' + stage;
     }
     el.classList.add('show');
   });
 })
 
 // Correct screen modal button (next stage)
-document.querySelector('.correct .modal-button').addEventListener('click', e => {
+document.querySelector('.correct .transition-button').addEventListener('click', e => {
   nextStage();
   draw();
   document.querySelector('.correct').classList.remove('show');
@@ -57,7 +57,7 @@ document.querySelector('.correct .modal-button').addEventListener('click', e => 
 })
 
 // Wrong screen modal button (play again)
-document.querySelector('.wrong .modal-button').addEventListener('click', e => {
+document.querySelector('.wrong .transition-button').addEventListener('click', e => {
   init();
   draw();
   document.querySelector('.wrong').classList.remove('show');
