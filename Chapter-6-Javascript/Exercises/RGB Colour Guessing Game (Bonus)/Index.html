@@ -17,8 +17,8 @@
     <title>RGB Colour Guessing Game</title>
 </head>
 <body>
-    <div class="wrap">
-        <div class="top">
+    <div class="container">
+        <div class="header">
             <h1> <!--title-->
                 .·:*¨ RGB Colour Guessing Game ¨*:·.
             </h1>
@@ -27,9 +27,9 @@
                 correctly will earn you a point!</p>
         </div>
         <div class="score"></div> <!--SCORE-->
-        <div class="bottom">
-            <div class="game-center">
-                <div class="game-center-inner">
+        <div class="colors">
+            <div class="game">
+                <div class="game-center">
                     <div class="rgb-text"></div>
                     <div class="boxes"> <!--rgb color boxes-->
                         <div class="box"></div>
@@ -40,14 +40,14 @@
             </div>
         </div>
     </div>
-    <div class="correct modal"> <!--correct answer-->
-        <div class="modal-inner">CORRECT!</div>
-        <div class="modal-button">NEXT STAGE</div>
+    <div class="correct transition"> <!--correct answer-->
+        <div class="transition-inner">CORRECT!</div>
+        <div class="transition-button">NEXT STAGE</div>
     </div>
-    <div class="wrong modal"> <!--wrong answer-->
-        <div class="modal-inner">WRONG :(</div>
-        <div class="modal-score"></div>
-        <div class="modal-button">PLAY AGAIN</div>
+    <div class="wrong transition"> <!--wrong answer-->
+        <div class="transition-inner">WRONG :(</div>
+        <div class="transition-score"></div>
+        <div class="transition-button">PLAY AGAIN</div>
     </div>
     <!--javascript file-->
     <script src="Index.js"></script>
